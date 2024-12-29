@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor-principal: #0B3097;
+    --cor-principal-escuro: #042275;
+    --cor-pretaprincipal: #232628;
+    --fonte-principal: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background-color: #F2F2F2;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 999;
+}
+
+header li {
+    list-style-type: none;
+}
+
+.logo {
+    background-color: var(--cor-pretaprincipal);
+    margin: auto;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+    padding: 5px 0px;
+}
+
+.logo img:hover {
+    filter: brightness(60%);
+}
+
+.header_menu-grande {
+    background-color: var(--cor-principal);
+}
+
+.header_menu-grande ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_menu-grande li {
+    padding: 15px 10px;
+}
+
+.header_menu-grande a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header_menu-grande a:hover {
+    background-color: var(--cor-principal-escuro);
+}
+
+/*=========================*/
+
+.banner {
+    padding-top: 95px;
+    width: 100%;
+    height: 690px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-container {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.banner-slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-slide img {
+    width: 100%;
+    height: 690px;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.banner button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--cor-principal);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.banner button:hover {
+    background-color: var(--cor-principal-escuro);
+}
+
+/*=========================*/
+
+.banner_box-meio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner_noticiadireita {
+    padding: 20px;
+    z-index: 2;
+    list-style-type: none;
+}
+
+.banner_noticiadireita h2 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--fonte-principal);
+    padding-bottom: 20px;
+}
+
+.banner_noticiadireita_corte-linha {
+    width: 130px;
+    height: 1px;
+    background-color: white;
+}
+
+.banner_noticiadireita h1 {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: var(--fonte-principal);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 500px;
+}
+
+.banner_noticiadireita p {
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    font-family: var(--fonte-principal);
+    padding-bottom: 25px;
+    width: 500px;
+}
+
+.banner_noticiadireita a {
+    color: white;
+    font-size: 22px;
+    font-weight: 200;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    background-color: var(--cor-principal);
+    padding: 10px 20px;
+}
+
+.banner_noticiadireita a:hover {
+    background-color: var(--cor-principal-escuro);
+}
+
+/*=========================*/
+
+.destaque {
+    min-width: 80%;
+    margin: auto;
+    background-color: aqua;
+}
+
+.destaque h1 {
+    font-family: var(--fonte-principal);
+    font-size: 40px;
+    color: var(--cor-pretaprincipal);
+    font-weight: 600;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.destaque p {
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    color: var(--cor-pretaprincipal);
+    font-weight: 300;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/*=========================*/
+/*=========================*/
+/*=========================*/
+/*=========================*/
