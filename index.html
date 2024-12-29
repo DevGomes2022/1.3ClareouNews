@@ -14,17 +14,40 @@
                 <li class="logo">
                     <div><a href=""><img src="assets/logos/branco/clareouBRANCOescritoBRANCONEWSNOVO.png" alt="logo"></a></div>
                 </li>
-                <li class="header_menu-grande">
+                <nav class="menu">
+                    <div class="menu-list">
+                        <ul>
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Economia</a></li>
+                            <li><a href="#">Bitcoin</a></li>
+                            <li><a href="#">Política</a></li>
+                            <li><a href="#">Mundo</a></li>
+                            <li><a href="#">Contatos</a></li>
+                            <li><a href="#">Sobre</a></li>
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <svg class="mobile-menu-icon" onclick="menuShow()" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <line x1="4" y1="6" x2="20" y2="6" />
+                            <line x1="4" y1="12" x2="20" y2="12" />
+                            <line x1="4" y1="18" x2="20" y2="18" />
+                          </svg>
+                    </div>
+                </nav>
+    
+                <div class="mobile-menu">
                     <ul>
-                        <li><a href="">Início</a></li>
-                        <li><a href="">Economia</a></li>
-                        <li><a href="">Bitcoin</a></li>
-                        <li><a href="">Política</a></li>
-                        <li><a href="">Mundo</a></li>
-                        <li><a href="">Contatos</a></li>
-                        <li><a href="">Sobre</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Início</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Economia</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Bitcoin</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Política</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Mundo</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Contatos</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Sobre</a></li>
                     </ul>
-                </li>
+                </div>
             </ul>
         </header>
         <div class="banner">
@@ -123,5 +146,6 @@
         </div>
     </div>
     <script src="carrossel.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>

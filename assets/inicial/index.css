@@ -52,37 +52,111 @@ header li {
     filter: brightness(60%);
 }
 
-.header_menu-grande {
+.menu {
     background-color: var(--cor-principal);
 }
 
-.header_menu-grande ul {
+.menu-list {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header_menu-grande li {
-    padding: 15px 10px;
+.menu-list ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
 }
 
-@media screen and (max-width: 768px){
-    .header_menu-grande li {
+.menu-list li {
+    padding: 15px 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .menu-list li {
         padding: 15px 0px;
     }
 }
 
-.header_menu-grande a {
+.menu-list a {
+    font-size: 16px;
     color: white;
     padding: 15px 20px;
-    text-decoration: none;
     font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
+    text-decoration: none;
 }
 
-.header_menu-grande a:hover {
+.menu-list a:hover {
     background-color: var(--cor-principal-escuro);
+}
+
+.menu-item {
+    margin: 10px;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--fonte-principal);
+    color: white;
+    font-weight: 400;
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+
+.menu-link:hover {
+    background-color: var(--cor-principal-escuro);
+}
+
+
+.mobile-menu-icon {
+    display: none;
+    transition: 0.3s;
+}
+
+.mobile-menu-icon {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.mobile-menu-icon:hover {
+    background-color: var(--cor-principal-escuro);
+}
+
+.mobile-menu {
+    display: none;
+    background-color: var(--cor-principal);
+}
+
+@media screen and (max-width: 650px) {
+    .menu-list li {
+        display: none;
+    }
+    .menu-list a {
+        display: none;
+    }
+    .menu-item {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+    }
+    .mobile-menu .menu-item {
+        display: block;
+        padding: 5px 10px;
+    }
+    .mobile-menu {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
 }
 
 /*=========================*/
@@ -93,6 +167,24 @@ header li {
     height: 690px;
     position: relative;
     overflow: hidden;
+}
+
+@media screen and (max-width: 650px) {
+    .banner {
+        height: 540px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .banner {
+        height: 470px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .banner {
+        height: 400px;
+    }
 }
 
 .banner-container {
@@ -110,8 +202,25 @@ header li {
 .banner-slide img {
     width: 100%;
     height: 690px;
-    object-fit: cover;
     filter: brightness(60%);
+}
+
+@media screen and (max-width: 650px) {
+    .banner-slide img {
+        height: 540px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .banner-slide img {
+        height: 470px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .banner-slide img {
+        height: 400px;
+    }
 }
 
 .banner button {
@@ -124,6 +233,13 @@ header li {
     padding: 15px;
     cursor: pointer;
     z-index: 10;
+}
+
+@media screen and (max-width: 300px) {
+    .banner button {
+        top: 90%;
+        padding: 12px;
+    }
 }
 
 .prev {
@@ -161,6 +277,12 @@ header li {
     padding-bottom: 20px;
 }
 
+@media screen and (max-width: 300px) {
+    .banner_noticiadireita h2 {
+        font-size: 14px;
+    }
+}
+
 .banner_noticiadireita_corte-linha {
     width: 130px;
     height: 1px;
@@ -177,6 +299,26 @@ header li {
     width: 500px;
 }
 
+@media screen and (max-width: 650px) {
+    .banner_noticiadireita h1 {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .banner_noticiadireita h1 {
+        width: 200px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .banner_noticiadireita h1 {
+        width: 200px;
+        font-size: 14px;
+    }
+}
+
 .banner_noticiadireita p {
     color: white;
     font-size: 22px;
@@ -184,6 +326,26 @@ header li {
     font-family: var(--fonte-principal);
     padding-bottom: 25px;
     width: 500px;
+}
+
+@media screen and (max-width: 650px) {
+    .banner_noticiadireita p {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .banner_noticiadireita p {
+        width: 200px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .banner_noticiadireita p {
+        width: 200px;
+        font-size: 14px;
+    }
 }
 
 .banner_noticiadireita a {
@@ -198,6 +360,13 @@ header li {
 
 .banner_noticiadireita a:hover {
     background-color: var(--cor-principal-escuro);
+}
+
+@media screen and (max-width: 300px) {
+    .banner_noticiadireita a {
+        padding: 6px 12px;
+        font-size: 16px;
+    }
 }
 
 /*=========================*/
