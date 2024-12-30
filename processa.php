@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $mensagem = $_POST['mensagem'];
     
-    $destinatario = "formulario@clareounews.com"; // Altere para seu email
+    $destinatario = "noahferreira1706@gmail.com"; // Altere para seu email
     $assunto = "Mensagem do Formulário";
     $corpo = "Nome: $nome\nE-mail: $email\nMensagem: $mensagem";
     $headers = "From: $email";
