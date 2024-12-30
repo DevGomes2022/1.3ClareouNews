@@ -44,8 +44,8 @@
                         <li class="menu-item"><a href="https://clareounews.com/assets/assuntos/bitcoin/bitcoin.html" class="menu-link">Bitcoin</a></li>
                         <li class="menu-item"><a href="https://clareounews.com/assets/assuntos/politica/politica.html" class="menu-link">Política</a></li>
                         <li class="menu-item"><a href="https://clareounews.com/assets/assuntos/mundo/mundo.html" class="menu-link">Mundo</a></li>
-                        <li class="menu-item"><a href="https://clareounews.com/assets/contatos.html" class="menu-link">Contatos</a></li>
-                        <li class="menu-item"><a href="https://clareounews.com/assets/sobre.html" class="menu-link">Sobre</a></li>
+                        <li class="menu-item"><a href="https://clareounews.com/assets/contatos/contatos.html" class="menu-link">Contatos</a></li>
+                        <li class="menu-item"><a href="https://clareounews.com/assets/sobre/sobre.html" class="menu-link">Sobre</a></li>
                     </ul>
                 </div>
             </ul>
