@@ -1,0 +1,381 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor-principal: #0B3097;
+    --cor-principal-escuro: #031f6b;
+    --cor-pretaprincipal: #232628;
+    --fonte-principal: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-family: var(--fonte-principal);
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background-color: #F2F2F2;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+header li {
+    list-style-type: none;
+}
+
+.logo {
+    background-color: var(--cor-pretaprincipal);
+    margin: auto;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+    padding: 5px 0px;
+}
+
+.logo img:hover {
+    filter: brightness(60%);
+}
+
+.menu {
+    background-color: var(--cor-principal);
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-list li {
+    padding: 15px 20px;
+}
+
+@media screen and (max-width: 1070px) {
+    .menu-list li {
+        padding: 15px 0px;
+    }
+}
+
+.menu-list a {
+    font-size: 16px;
+    color: white;
+    padding: 15px 20px;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+}
+
+.menu-list a:hover {
+    background-color: var(--cor-principal-escuro);
+}
+
+.menu-item {
+    margin: 10px;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--fonte-principal);
+    color: white;
+    font-weight: 400;
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+
+.menu-link:hover {
+    background-color: var(--cor-principal-escuro);
+}
+
+
+.mobile-menu-icon {
+    display: none;
+    transition: 0.3s;
+}
+
+.mobile-menu-icon {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.mobile-menu-icon:hover {
+    background-color: var(--cor-principal-escuro);
+}
+
+.mobile-menu {
+    display: none;
+    background-color: var(--cor-principal);
+}
+
+@media screen and (max-width: 830px) {
+    .menu-list li {
+        display: none;
+    }
+    .menu-list a {
+        display: none;
+    }
+    .menu-item {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+    }
+    .mobile-menu .menu-item {
+        display: block;
+        padding: 5px 10px;
+    }
+    .mobile-menu {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+
+/*=======================================================================*/
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.materia {
+    width: 70%;
+    margin: auto;
+    padding-top: 140px;
+}
+
+@media screen and (max-width: 600px){
+    .materia {
+        width: 100%;
+    }
+}
+
+/* Estilos para a página de notícia */
+.header {
+    margin-bottom: 20px;
+}
+
+.noticia h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.noticia h2 {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.informacoes {
+    font-size: 0.9em;
+    color: #888;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.informacoes .autor,
+.informacoes .hora {
+    margin-bottom: 5px;
+}
+
+.informacoes span {
+    font-weight: bold;
+}
+
+.foto-principal img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.conteudo {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.conteudo h3 {
+    font-size: 1.7em;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.conteudo p {
+    font-size: 1em;
+    color: #555;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.conteudo h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.conteudo li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.conteudo a {
+    color: var(--cor-principal);
+}
+
+.conteudo a:hover {
+    color: var(--cor-principal-escuro);
+}
+
+@media screen and (max-width: 830px){
+    .noticia h1 {
+        font-size: 1.6em;
+        color: #333;
+    }
+    .noticia h2 {
+        font-size: 1em;
+        color: #666;
+    }
+    
+    .informacoes {
+        font-size: 0.6em;
+        color: #888;
+    }
+    
+    .foto-principal img {
+        margin-bottom: 0px;
+    }
+
+    .conteudo {
+        font-size: 1em;
+        color: #555;
+    }
+    
+    .conteudo h3 {
+        font-size: 1.2em;
+        color: #333;
+        margin-top: 10px;
+    }
+    .conteudo h4 {
+        font-size: 1em;
+        color: #333;
+    }
+}
+
+/*=======================================================================*/
+
+footer {
+    width: 100%;
+    background-color: var(--cor-pretaprincipal);
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer a img{
+    padding: 10px;
+    width: 150px;
+}
+
+footer a img:hover {
+    opacity: 50%;
+}
+
+footer h1 {
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    font-family: var(--fonte-principal);
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer li a svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+    padding: 5px;
+}
+
+.youtube:hover {
+    fill: #c40303;
+}
+
+.facebook:hover {
+    fill: #000000;
+}
+
+.instagram:hover {
+    fill: #792a13;
+}
+
+.twitter:hover {
+    fill: #0084b8;
+}
+
+footer p {
+    font-size: 12px;
+    color: white;
+    font-weight: 300;
+    font-family: var(--fonte-principal);
+}
