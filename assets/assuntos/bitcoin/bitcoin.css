@@ -556,3 +556,56 @@ footer p {
 }
 
 /*=========================*/
+
+.share-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 60px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.whatsapp {
+    background-color: #25D366;
+    fill: white;
+}
+
+.whatsapp:hover {
+    background-color: #189646;
+}
+
+.whatsapp svg {
+    width: 18px;
+    height: 18px;
+}
+
+.share-anywhere {
+    background-color: #007BFF;
+    fill: white;
+}
+
+.share-anywhere:hover {
+    background-color: #0256af;
+}
+
+.share-anywhere svg {
+    width: 18px;
+    height: 18px;
+}
+
+@media screen and (max-width: 300px) {
+    button {
+        padding: 5px 30px;
+    }
+}
+
+/*=======================================================*/
+/*=======================================================*/
+/*=======================================================*/
+/*=======================================================*/
+/*=======================================================*/
