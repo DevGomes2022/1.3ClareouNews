@@ -353,6 +353,22 @@ footer li a svg {
     fill: #0084b8;
 }
 
+/*========*/
+
+.footer_importante li {
+    padding: 0px 10px;
+}
+
+.footer_importante a {
+    color: white;
+}
+
+.footer_importante a:hover {
+    color: #a8a8a8;
+}
+
+/*========*/
+
 footer p {
     font-size: 12px;
     color: white;
