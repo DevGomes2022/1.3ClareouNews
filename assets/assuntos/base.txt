@@ -66,6 +66,19 @@
                 </section>
     
                 <section class="conteudo">
+
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4509128449071313"
+                        crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                        style="display:block; text-align:center;"
+                        data-ad-layout="in-article"
+                        data-ad-format="fluid"
+                        data-ad-client="ca-pub-4509128449071313"
+                        data-ad-slot="8651477252"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
                     <h3>Mobilização do governo</h3>
                     <p>Durante o feriado de Natal, o Googl</p>
 
@@ -74,6 +87,18 @@
 
                     <h3>De quem é a culpa de o dólar estar alto?</h3>
                     <p>Por mais que alguns apresentadores</p>
+
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4509128449071313"
+                        crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                        style="display:block; text-align:center;"
+                        data-ad-layout="in-article"
+                        data-ad-format="fluid"
+                        data-ad-client="ca-pub-4509128449071313"
+                        data-ad-slot="8651477252"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </section>
             </article>
         </div>
