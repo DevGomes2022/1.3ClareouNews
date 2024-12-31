@@ -56,6 +56,43 @@ header li {
     filter: brightness(60%);
 }
 
+/*=========================================================*/
+
+.marquee-container {
+    width: 100vw;
+    height: 30px;
+    background-color: var(--cor-principal-escuro);
+    color: white;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.marquee-content {
+    position: absolute;
+    animation: zigzag 15s ease-in-out infinite alternate;
+}
+
+@keyframes zigzag {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .marquee-container {
+        font-size: 10px;
+    }
+}
+
+/*=========================================================*/
+
 .menu {
     background-color: var(--cor-principal);
 }
@@ -982,8 +1019,6 @@ header li {
 }
 
 /*=========================*/
-/*=========================*/
-/*=========================*/
 
 footer {
     width: 100%;
@@ -1063,3 +1098,9 @@ footer p {
     font-weight: 300;
     font-family: var(--fonte-principal);
 }
+
+
+
+/*=========================================================*/
+/*=========================================================*/
+/*=========================================================*/
