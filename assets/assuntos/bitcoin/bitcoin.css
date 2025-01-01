@@ -237,6 +237,35 @@ nav ul li a {
     border-radius: 8px;
 }
 
+.foto-secundaria {
+    margin: auto;
+    text-align: center;
+}
+
+.foto-secundaria img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1070px) {
+    .foto-secundaria img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .foto-secundaria img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .foto-secundaria img {
+        width: 100%;
+    }
+}
+
 .conteudo {
     font-size: 1.1em;
     line-height: 1.6;
