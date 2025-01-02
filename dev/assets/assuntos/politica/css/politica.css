@@ -98,11 +98,11 @@ header {
     margin-right: 20px;
 }
 
-@media screen and (max-width: 450px) {
+/*@media screen and (max-width: 450px) {
     .header-corte {
         display: none;
     }
-}
+}*/
 
 
 .header-titulo h1 {

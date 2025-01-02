@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
 
@@ -24,8 +24,8 @@ body {
 
 .container {
     width: 100%;
-    height: 3000px;
     margin: auto;
+    text-align: center;
 }
 
 /* Estilos do menu */
@@ -98,11 +98,11 @@ header {
     margin-right: 20px;
 }
 
-@media screen and (max-width: 450px) {
+/*@media screen and (max-width: 450px) {
     .header-corte {
         display: none;
     }
-}
+}*/
 
 
 .header-titulo h1 {
@@ -294,7 +294,96 @@ header {
 }
 
 /*=====================================*/
+
+.conteudo {
+    font-family: var(--fonte-1);
+    padding-top: 80px;
+}
+
+.conteudo h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.conteudo h2 {
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.conteudo p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.launch {
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.launch ul {
+    display: flex;
+    justify-content: center;
+}
+
+.launch li {
+    list-style-type: none;
+}
+
 /*=====================================*/
+
+footer {
+    height: 100px;
+    margin-top: 50px;
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.link-redes {
+    margin-bottom: 10px;
+}
+
+.link-redes svg {
+    width: 22px;
+    height: 22px;
+    fill: #747474;
+}
+
+.link-redes svg:hover {
+    fill: #424242;
+}
+
+.footer-links {
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #747474;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    color: #424242;
+    text-decoration: underline;
+}
+
+footer p {
+    color: #747474;
+}
+
 /*=====================================*/
 /*=====================================*/
 /*=====================================*/
