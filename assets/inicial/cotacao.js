@@ -7,15 +7,13 @@ async function atualizarCotacoes() {
         const euro = dados.EURBRL.bid;
         const bitcoin = dados.BTCBRL.bid;
 
-        const cotacaoTexto = `
-            $ Dólar: R$ ${parseFloat(dolar).toFixed(2)}ㅤㅤ
-            € Euro: R$ ${parseFloat(euro).toFixed(2)}ㅤㅤ
-            ₿ Bitcoin: R$ ${parseFloat(bitcoin).toFixed(0)}
-        `;
-
-        document.getElementById('cotacoes').innerHTML = cotacaoTexto;
+        document.getElementById('dolar').innerText = `R$ ${parseFloat(dolar).toFixed(2)}`;
+        document.getElementById('euro').innerText = `R$ ${parseFloat(euro).toFixed(2)}`;
+        document.getElementById('bitcoin').innerText = `R$ ${parseFloat(bitcoin).toFixed(0)}`;
     } catch (error) {
-        document.getElementById('cotacoes').innerHTML = 'Erro ao carregar cotações.';
+        document.getElementById('dolar').innerText = 'Erro';
+        document.getElementById('euro').innerText = 'Erro';
+        document.getElementById('bitcoin').innerText = 'Erro';
     }
 }
 
