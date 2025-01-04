@@ -312,7 +312,7 @@ header {
 @media screen and (max-width: 550px) {
     .banner-img img {
         width: 100%;
-        height: auto;
+        height: 400px;
         padding-top: 60px;
     }
 }
@@ -554,8 +554,9 @@ header {
 
 @media screen and (max-width: 800px) {
     .destaque_parte1 li {
-        width: 100%;
+        width: 450px;
         height: auto;
+        margin: auto;
         margin-top: 10px;
         margin-bottom: 10px;
         padding: 0;
@@ -563,6 +564,28 @@ header {
     }
     .destaque_parte1 img {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .destaque_parte1 li {
+        width: 350px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .destaque_parte1 li {
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+        padding-bottom: 20px;
     }
 }
 
