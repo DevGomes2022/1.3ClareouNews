@@ -675,6 +675,7 @@ header {
 
 .importantes li:hover {
     background-color: #f0f0f0;
+    opacity: 80%;
 }
 
 .importantes a {
@@ -688,7 +689,17 @@ header {
 
 @media screen and (max-width: 850px) {
     .importantes li {
-        width: 180px;
+        width: 150px;
+    }
+    .importantes img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .importantes li {
+        width: 100px;
     }
     .importantes img {
         width: 100%;
@@ -702,6 +713,17 @@ header {
     text-align: initial;
     font-weight: 400;
     line-height: 18px;
+}
+
+.importante-dividido {
+    display: flex;
+}
+
+
+@media screen and (max-width: 660px) {
+    .importante-dividido {
+        display: block;
+    }
 }
 
 /*=====================================*/
@@ -762,6 +784,102 @@ input[type="text"], input[type="email"] {
 }
 button:hover {
     background-color: var(--cor-principal-escuro);
+}
+
+/*=====================================*/
+
+.todas {
+    width: 1200px;
+    margin: auto;
+    background-color: white;
+    font-family: var(--fonte-1);
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 1210px) {
+    .todas {
+        width: 100%;
+    }
+}
+
+.todas > h1 {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--cor-preta-principal);
+    font-weight: 400;
+    border-top: 2px solid #031f6b;
+}
+
+.todas ul {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 98%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    
+}
+
+.todas li {
+    width: 150px;
+    height: 180px;
+    padding: 2px;
+    list-style-type: none;
+}
+
+.todas li:hover {
+    background-color: #f0f0f0;
+    opacity: 80%;
+}
+
+.nova-secao img {
+    width: 150px;
+    height: 100px;
+}
+
+.nova-imagem {
+    width: 150px;
+    height: auto;
+}
+
+.novo-titulo {
+    font-size: 12px;
+    color: black;
+    font-weight: 300;
+    line-height: 14px;
+}
+
+@media screen and (max-width: 780px) {
+    .todas li {
+        width: 100px;
+    }
+    .nova-secao img {
+        width: 100px;
+        height: 75px;
+    }
+    .novo-titulo {
+        font-size: 11px;
+    }
+}
+
+.novo-link {
+    text-align: center;
+    text-decoration: none;
+}
+
+.todos-dividido {
+    display: flex;
+}
+
+
+@media screen and (max-width: 450px) {
+    .todos-dividido {
+        display: block;
+    }
 }
 
 /*=====================================*/
